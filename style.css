@@ -33,12 +33,12 @@ main {
 }
 
 .clock span{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 .clock span:last-child{
   display: inline-block;
-  min-width: 4rem;
+  min-width: 3.5rem;
 }
 
 footer{
