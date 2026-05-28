@@ -1,26 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>In-Time</title>
-</head>
-<body>
-  <header class='flex'>
-    <h1>In-Time</h1>
-  </header>
-  <main class='flex'>
-    <div class="clock" >
-      <span id='h'></span>
-      <span>:</span>
-      <span id='m'></span>
-      <span>:</span>
-      <span id='s'></span>
-    </div>
-  </main>
-  <footer class='flex'>@cicerosnt</footer>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Relógio digital minimalista que mostra horas, minutos e segundos em tempo real."
+    />
+    <meta
+      name="keywords"
+      content="relógio, relógio digital, tempo, horas, minutos, segundos, cicerosnt, @cicerosnt"
+    />
+    <meta name="author" content="@cicerosnt" />
+    <meta name="application-name" content="In-Time" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='0.9em'%20font-size='90'%3E%F0%9F%95%98%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>In-Time - Relógio Digital Minimalista</title>
+  </head>
+  <body>
+    <header class="flex">
+      <h1>🕘 In-Time</h1>
+    </header>
+    <main class="flex">
+    <div id="hello" class="greeting">Olá!</div>
+      <div class="clock">
+        <span id="h"></span>
+        <span>:</span>
+        <span id="m"></span>
+        <span>:</span>
+        <span id="s"></span>
+      </div>
+    </main>
+    <footer class="flex">
+      <a href="https://github.com/cicerosnt/in-time" target="_blank" class="h">@cicerosnt</a>
+    </footer>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

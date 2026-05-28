@@ -1,25 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
-.flex{
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html, body, footer{
+html,
+body,
+footer {
   background-color: #2b2929;
   color: aliceblue;
-  min-width: 350PX;
+  min-width: 350px;
 }
 
-header{
+header {
   height: 5rem;
 }
 
@@ -32,38 +40,43 @@ main {
   margin: 0;
 }
 
-.clock span{
-  font-size: 2.5rem;
+.clock span {
+  font-size: 3rem;
   font-weight: bold;
 }
-.clock span:last-child{
+.clock span:last-child {
   display: inline-block;
-  min-width: 3.5rem;
+  min-width: 4rem;
 }
 
-footer{
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
   height: auto;
 }
 
-@media (min-width: 360px){
-  main{
+@media (min-width: 360px) {
+  main {
     height: calc(100vh - 7rem);
   }
-  .clock span{
+  .clock span {
     font-size: 5rem;
   }
-  .clock span:last-child{
+  .clock span:last-child {
     min-width: 6rem;
   }
 }
-@media (min-width: 768px){
-  h1{
+@media (min-width: 768px) {
+  h1 {
     font-size: 4rem;
   }
-  .clock span{
+  .clock span {
     font-size: 9rem;
   }
-  .clock span:last-child{
+  .clock span:last-child {
     min-width: 12rem;
   }
 }
