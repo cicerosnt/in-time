@@ -2,26 +2,64 @@
 
 ## Descrição
 
-In-Time é uma aplicação web simples e elegante que exibe a hora em tempo real. O projeto é ideal para demonstrações de habilidades em HTML, CSS e JavaScript, oferecendo uma interface limpa e responsiva.
+In-Time é um relógio digital online, gratuito e responsivo. A aplicação exibe a hora atual em tempo real, apresenta uma saudação de acordo com o período do dia e permite definir uma frase personalizada.
 
-## Visão Geral
+## Funcionalidades
 
-Este projeto apresenta:
-- Interface de usuário minimalista e responsiva
-- Atualização automática da hora a cada segundo
+- Exibição de horas, minutos e segundos.
+- Atualização automática da hora a cada segundo.
+- Saudação dinâmica: bom dia, boa tarde ou boa noite.
+- Edição da frase personalizada pelo ícone de edição.
+- Persistência da frase no `localStorage` do navegador.
+- Interface minimalista e responsiva.
 
-## Demonstração
+## Demonstração online
 
-Você pode ver a aplicação em funcionamento [aqui](https://cicerosnt.github.io/in-time/).
+Acesse o [In-Time](https://cicerosnt.github.io/in-time/) diretamente no navegador.
 
-## Tecnologias Utilizadas
+## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
 
-## Instalação
+## Execução local
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/cicerosnt/in-time.git
+Clone o repositório e entre na pasta do projeto:
+
+```bash
+git clone https://github.com/cicerosnt/in-time.git
+cd in-time
+```
+
+Depois, abra o arquivo `index.html` no navegador. No VS Code, também é possível usar a extensão Live Server para iniciar um servidor local.
+
+O projeto não exige instalação de dependências ou um processo de build.
+
+## Como personalizar a frase
+
+1. Passe o mouse sobre a frase exibida ao lado da saudação.
+2. Clique no ícone de edição.
+3. Digite a nova frase.
+4. Pressione `Enter` para salvar ou `Esc` para cancelar.
+
+A frase fica salva apenas no navegador atual, por meio do `localStorage`. Ela não é enviada para um servidor e não é compartilhada entre dispositivos ou navegadores.
+
+## Estrutura do projeto
+
+```text
+in-time/
+├── index.html    # Estrutura da aplicação e metadados
+├── style.css     # Estilos e responsividade
+├── script.js     # Relógio e preferências do usuário
+├── robots.txt    # Instruções para rastreadores
+└── sitemap.xml   # Sitemap do site publicado
+```
+
+## Compatibilidade
+
+Funciona em navegadores modernos com suporte a JavaScript, `localStorage` e CSS responsivo.
+
+## Autor
+
+Desenvolvido por [@cicerosnt](https://github.com/cicerosnt).

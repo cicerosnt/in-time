@@ -1,3 +1,5 @@
+const greetingStorageKey = 'in-time-greeting';
+
 function updateClock() {
   const now = new Date();
   const hours = String(now.getHours()).padStart(2, '0');
@@ -18,5 +20,46 @@ function updateGreeting(now) {
   document.getElementById('hello').textContent = greeting;
 }
 
+function setupGreetingEditor() {
+  const greetingElement = document.getElementById('customGreeting');
+  const editButton = document.getElementById('editGreeting');
+  let previousGreeting = '';
+
+  const savedGreeting = localStorage.getItem(greetingStorageKey);
+  if (savedGreeting) {
+    greetingElement.textContent = savedGreeting;
+  }
+
+  function finishEditing(saveGreeting) {
+    const newGreeting = greetingElement.textContent.trim();
+    greetingElement.contentEditable = 'false';
+
+    if (saveGreeting && newGreeting) {
+      localStorage.setItem(greetingStorageKey, newGreeting);
+    } else {
+      greetingElement.textContent = previousGreeting;
+    }
+  }
+
+  editButton.addEventListener('click', () => {
+    previousGreeting = greetingElement.textContent;
+    greetingElement.contentEditable = 'true';
+    greetingElement.focus();
+    document.execCommand('selectAll', false);
+  });
+
+  greetingElement.addEventListener('blur', () => finishEditing(true));
+  greetingElement.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      greetingElement.blur();
+    }
+    if (event.key === 'Escape') {
+      finishEditing(false);
+    }
+  });
+}
+
+setupGreetingEditor();
 setInterval(updateClock, 1000);
 updateClock();

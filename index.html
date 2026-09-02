@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Relógio digital minimalista que mostra horas, minutos e segundos em tempo real."
-    />
-    <meta
-      name="keywords"
-      content="relógio, relógio digital, tempo, horas, minutos, segundos, cicerosnt, @cicerosnt"
+      content="Relógio digital online, gratuito e responsivo para consultar a hora exata em tempo real, com horas, minutos e segundos."
     />
     <meta name="author" content="@cicerosnt" />
     <meta name="application-name" content="In-Time" />
+    <meta name="theme-color" content="#2b2929" />
+    <link rel="canonical" href="https://cicerosnt.github.io/in-time/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="In-Time" />
+    <meta property="og:title" content="In-Time | Relógio Digital Online" />
+    <meta
+      property="og:description"
+      content="Consulte a hora exata em um relógio digital online, gratuito e responsivo."
+    />
+    <meta property="og:url" content="https://cicerosnt.github.io/in-time/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="In-Time | Relógio Digital Online" />
+    <meta
+      name="twitter:description"
+      content="Consulte a hora exata em um relógio digital online, gratuito e responsivo."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "In-Time",
+        "url": "https://cicerosnt.github.io/in-time/",
+        "description": "Relógio digital online, gratuito e responsivo para consultar a hora exata em tempo real.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "inLanguage": "pt-BR",
+        "isAccessibleForFree": true
+      }
+    </script>
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='0.9em'%20font-size='90'%3E%F0%9F%95%98%3C/text%3E%3C/svg%3E"
@@ -25,14 +51,25 @@
       <h1>🕘 In-Time</h1>
     </header>
     <main class="flex">
-    <div id="hello" class="greeting">Olá!</div>
-      <div class="clock">
-        <span id="h"></span>
-        <span>:</span>
-        <span id="m"></span>
-        <span>:</span>
-        <span id="s"></span>
+      <div class="greetings-line">
+        <div class="greeting-container">
+          <p id="hello" class="greeting" aria-live="polite">Olá!</p>
+        </div>
+        <div class="custom-greeting-container">
+          <p id="customGreeting" class="custom-greeting">Consulte a hora exata agora.</p>
+          <button id="editGreeting" class="edit-greeting" type="button" aria-label="Editar frase" title="Editar frase">
+            &#9998;
+          </button>
+        </div>
       </div>
+      <div class="clock" aria-label="Hora atual" role="timer">
+        <span id="h">00</span>
+        <span>:</span>
+        <span id="m">00</span>
+        <span>:</span>
+        <span id="s">00</span>
+      </div>
+      <p class="clock-description">https://cicerosnt.github.io/in-time</p>
     </main>
     <footer class="flex">
       <a href="https://github.com/cicerosnt/in-time" target="_blank" class="h">@cicerosnt</a>
