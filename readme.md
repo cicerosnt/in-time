@@ -62,4 +62,4 @@ Funciona em navegadores modernos com suporte a JavaScript, `localStorage` e CSS 
 
 ## Autor
 
-Desenvolvido por [@cicerosnt](https://github.com/cicerosnt).
+[@cicerosnt](https://github.com/cicerosnt).
